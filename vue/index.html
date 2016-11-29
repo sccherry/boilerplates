@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="app">
+    <header role="banner">
+      <h1>Site Title</h1>
+
+      <nav role="navigation">
+        <ul>
+          <li><a v-link="{ path: '/' }">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <router-view></router-view>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.39/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('main');
+  </script>
+</body>
+</html>
